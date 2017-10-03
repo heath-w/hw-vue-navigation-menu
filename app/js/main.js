@@ -8,9 +8,9 @@ var menu = new Vue( {
 		message : 'Please click a menu item'
 	},
 	methods : {
-		makeActive : function( item, label ) {
+		makeActive : function( item ) {
 			console.log( 'makeActive' );
-			console.log( 'makeActive - item[', item, '] label[', label, ']' );
+			console.log( 'makeActive - item[', item, ']' );
 
 			// Remove active class from the previous anchor
 			this.homeActive = false;
@@ -20,19 +20,19 @@ var menu = new Vue( {
 
 			// Add active class to the select anchor (item)
 			switch( item ) {
-				case 'homeMenu':
+				case 'home':
 					// console.log( 'switch homeMenu' );
 					this.homeActive = true;
 					break;
-				case 'projectsMenu':
+				case 'projects':
 					// console.log( 'switch projectsMenu' );
 					this.projectsActive = true;
 					break;
-				case 'servicesMenu':
+				case 'services':
 					// console.log( 'switch homeMenu' );
 					this.servicesActive = true;
 					break;
-				case 'contactMenu':
+				case 'contact':
 					// console.log( 'switch homeMenu' );
 					this.contactActive = true;
 					break;			
@@ -40,7 +40,7 @@ var menu = new Vue( {
 			}
 
 			// Change the text of message
-			this.message = 'You chose ' + label;
+			this.message = 'You chose ' + item.toUpperCase();
 		}
 	}
 });
