@@ -1,0 +1,35 @@
+* {
+	margin : 0px;
+	padding : 0px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	background-color : #5597b4;
+	margin : 60px auto 45px;		
+	/*border : 1px solid blue;*/
+	text-align: center;
+	width: 100%;
+}
+
+nav a {
+	/*font-weight : bold;*/
+	font-size : 16px;
+	color : #fff;
+	display : inline-block;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-transform : uppercase;
+	text-decoration : none;
+	/*border : 1px solid red;*/
+	letter-spacing: 2px;
+}
+
+.active {
+	background-color: #e35885;
+}
