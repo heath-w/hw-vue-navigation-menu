@@ -11,13 +11,17 @@
 		<h1>Basic Application Structure</h1>	
 	</div>
 
-	<div id="menu">
-			<nav>
-				<a class="active" id="homeMenu" href="#">Home</a>	
-				<a id="projectsMenu" href="#">Projects</a>	
-				<a id="servicesMenu" href="#">Services</a>	
-				<a id="contactMenu" href="#">Contact</a>	
-			</nav>
+	<div v-cloak id="menu">
+		<nav>
+			<a id="homeMenu" href="#">Home</a>	
+			<a id="projectsMenu" href="#">Projects</a>	
+			<a id="servicesMenu" href="#">Services</a>	
+			<a id="contactMenu" href="#">Contact</a>	
+		</nav>
+
+		<div>
+			<p class="messagePara">{{ message }}</p>		
+		</div>
 	</div>
 	
 	<!-- <script type="text/javascript" src="js/products.js"></script> -->

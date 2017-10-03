@@ -3,6 +3,10 @@
 	padding : 0px;
 }
 
+[v-cloak] {
+	display: none;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -27,6 +31,12 @@ nav a {
 	text-transform : uppercase;
 	text-decoration : none;
 	/*border : 1px solid red;*/
+	letter-spacing: 2px;
+}
+
+.messagePara {
+	text-align: center;
+	font-size : 16px;
 	letter-spacing: 2px;
 }
 
